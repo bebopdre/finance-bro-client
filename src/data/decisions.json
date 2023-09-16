@@ -1,0 +1,134 @@
+[
+    {
+        "title": "start",
+        "decisions": [
+            {
+                "key": 1,
+                "option": "Open a credit card",
+                "description": "Congrats! This is the ideal option!",
+                "tree": [
+                    {
+                        "key": 101,
+                        "option": "First in open credit card",
+                        "tree_one": [
+                            {
+                                "key": 10101,
+                                "option_two": "Firsr of First in open credit card."
+                            },
+                            {
+                                "key": 10102,
+                                "option_two": "Second of First in open credit card."
+                            },
+                            {
+                                "key": 10103,
+                                "option_two": "Third of First in open credit card."
+                            },
+                            {
+                                "key": 10104,
+                                "option_two": "Fourth of First in open credit card."
+                            }
+                        ]
+                    },
+                    {
+                        "key": 102,
+                        "option": "Second in open credit card",
+                        "tree_one": [
+                            {
+                                "key": 10201,
+                                "option_two": "Firsr of Second in open credit card."
+                            },
+                            {
+                                "key": 10202,
+                                "option_two": "Second of Second in open credit card."
+                            },
+                            {
+                                "key": 10203,
+                                "option_two": "Third of Second in open credit card."
+                            },
+                            {
+                                "key": 10204,
+                                "option_two": "Fourth of Second in open credit card."
+                            }
+                        ]
+                    },
+                    {
+                        "key": 103,
+                        "option": "Third in open credit card"
+                    },
+                    {
+                        "key": 104,
+                        "option": "Fourth in open credit card"
+                    }
+                ]
+            },
+            {
+                "key": 2,
+                "option": "Go on a shopping spree",
+                "description": "Although not the most ideal option, we can work with this!",
+                "tree": [
+                    {
+                        "key": 201,
+                        "option_one": "First in open shopping spree"
+                    },
+                    {
+                        "key": 202,
+                        "option_one": "Second in open shopping spree"
+                    },
+                    {
+                        "key": 203,
+                        "option_one": "Third in open shopping spree"
+                    },
+                    {
+                        "key": 204,
+                        "option_one": "Fourth in open shopping spree"
+                    }
+                ]
+            },
+            {
+                "key": 3,
+                "option": "Invenst in new crypto-currency Yeezy-Coin",
+                "tree": [
+                    {
+                        "key": 301,
+                        "option_one": "First in crypto"
+                    },
+                    {
+                        "key": 302,
+                        "option_one": "Second in crypto"
+                    },
+                    {
+                        "key": 303,
+                        "option_one": "Third in crypto"
+                    },
+                    {
+                        "key": 304,
+                        "option_one": "Fourth in crypto"
+                    }
+                ]
+            },
+            {
+                "key": 4,
+                "option": "Stash it under my bed",
+                "tree": [
+                    {
+                        "key": 401,
+                        "option_one": "First in stash under bed"
+                    },
+                    {
+                        "key": 402,
+                        "option_one": "Second in stash under bed"
+                    },
+                    {
+                        "key": 403,
+                        "option_one": "Third in stash under bed"
+                    },
+                    {
+                        "key": 404,
+                        "option_one": "Fourth in stash under bed"
+                    }
+                ]
+            }
+
+        ]
+    }
+]

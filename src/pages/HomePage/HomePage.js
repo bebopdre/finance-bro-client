@@ -1,9 +1,12 @@
+import Terminal from '../../components/Terminal/Terminal';
 import './HomePage.scss';
 
 function HomePage() {
     return (
-        <main>
-             
+        <main className='homepage'>
+            <section className='terminal'>
+                <Terminal />
+            </section>
         </main>
     )
 }
