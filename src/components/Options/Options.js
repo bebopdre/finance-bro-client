@@ -6,7 +6,7 @@ function Options({options}) {
         <div className="options">
             {
                 options.map( thing => (
-                    <p>{thing}</p>
+                    <p className='options__option'>{thing}</p>
                 ))
             }
         </div>

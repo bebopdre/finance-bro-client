@@ -1,4 +1,8 @@
 .options {
     color: rgb(30, 240, 30);
     padding-bottom: 2vw;
+
+    &__option {
+        padding-bottom: 1vw;
+    }
 }
