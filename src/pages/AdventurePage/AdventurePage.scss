@@ -2,54 +2,81 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography";
 
-body {
-  background-color: black;
-}
 .adventure {
+  background-color: black;
+  height: 100vh;
+  padding: 5vw;
+
   &__title {
     color: $white;
+    font-size: 5rem;
   }
-  &__item {
-    border-radius: 50%;
-    border: 4px solid $teal;
-    background-color: $purple;
-    width: 12rem;
-    height: 12rem;
-    margin-left: 0.5rem;
-    margin-bottom: 1rem;
+
+  &__paths {
+    height: 80vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    &-flex {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10rem;
-    }
-    &-container {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
+    padding: 2vw 0;
   }
-  &__contents {
+
+  &__image-container {
+    width: 22%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    &-two {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 8rem 8rem 0 0;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
-  &__title {
-    @include page-header;
-    margin: 25px 0 0 25px;
+
+  &__image-name {
+    color: white;
+    font-size: 2rem;
+    padding-top: 2vw;
   }
-  &__subheading {
-    @include body-medium;
-    gap: 2rem;
-    color: $white;
-  }
+
+  // &__item {
+  //   border-radius: 50%;
+  //   border: 4px solid $teal;
+  //   background-color: $purple;
+  //   width: 12rem;
+  //   height: 12rem;
+  //   margin-left: 0.5rem;
+  //   margin-bottom: 1rem;
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  //   align-items: center;
+  //   &-flex {
+  //     display: flex;
+  //     flex-direction: column;
+  //     margin-top: 10rem;
+  //   }
+  //   &-container {
+  //     display: flex;
+  //     flex-direction: column-reverse;
+  //     align-items: center;
+  //     margin-bottom: 1rem;
+  //   }
+  // }
+  // &__contents {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   &-two {
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-around;
+  //     margin: 8rem 8rem 0 0;
+  //   }
+  // }
+  // &__title {
+  //   @include page-header;
+  //   // margin: 25px 0 0 25px;
+  // }
+  // &__subheading {
+  //   @include body-medium;
+  //   gap: 2rem;
+  //   color: $white;
+  // }
 }

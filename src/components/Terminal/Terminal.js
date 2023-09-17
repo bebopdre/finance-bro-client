@@ -9,6 +9,7 @@ function Terminal() {
     const [path, setPath] = useState([]);
     const [showMessage, setShowMessage] = useState(false);
     const [next, setNext] = useState(false);
+    const [showWelcomeMessage, setShowWelcomeMessage] = useState(true);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -66,7 +67,42 @@ function Terminal() {
 
     return (
         <section className='terminal-window'>
-            <h2 className='terminal-window__heading'>Hello! Welcome to Shell City Trails</h2>
+            <div className={showWelcomeMessage ? 'terminal-window__welcome' : 'off'}>
+                <p className='terminal-window__message'>
+                    She wished she could protect you forever, but she did what she could.
+                </p>
+                <p className='terminal-window__message'>
+                    She left you with a loving sum of $15,000, and it's up to you to figure out how you will
+                </p>
+                <p className='terminal-window__message'>
+                    navigate the world with it.
+                </p>
+                <p className='terminal-window__message'>
+                    ... What's your first move? Type Start below to begin your journey.
+                </p>
+            </div>
+            <form onSubmit={handleSubmit}>
+                <span className='terminal-window__message'> ={aligator} </span>
+                <input className='terminal-window__input' type="text" name='userInput' placeholder='type something here'></input>
+            </form>
+            {/* <div className='typewriter'>
+                <p className='typewriter__message'>
+                    She wished she could protect you forever, but she did what she could.
+                </p>
+                <p className='typewriter__message'>
+                    She left you with a loving sum of $15,000, and it's up to you to figure out how you will
+                </p>
+                <p className='typewriter__message'>
+                    navigate the world with it.
+                </p>
+                <p className='typewriter__message'>
+                    ... What's your first move?
+                </p>
+            </div> */}
+            {/* <p className='typewriter'>She left you with a loving sum of $15,000, and it's up to you to figure out how you will</p>
+            <p className='typewriter'>navigate the world with it.</p>
+            <p className='typewriter'>... What's your first move?</p> */}
+            {/* <h2 className='terminal-window__heading'>Hello! Welcome to Shell City Trails</h2>
             <div className={showMessage ? 'off' : ''}>
                 <p className='terminal-window__message'>
                     Oh no... Your Grandmother has passed!
@@ -80,17 +116,14 @@ function Terminal() {
                 <p className='terminal-window__message'>
                     How are you going to spend it?
                 </p>
-            </div>
+            </div> */}
             
-            <p className='terminal-window__message'>{message}</p>
+            {/* <p className='terminal-window__message'>{message}</p>
             <p className={showMessage ? 'terminal-window__options' : 'off'}>
                 <Options options={path} />
             </p>
             
-            <form onSubmit={handleSubmit}>
-                <span className='terminal-window__message'> ={aligator} </span>
-                <input className='terminal-window__input' type="text" name='userInput' placeholder='type something here'></input>
-            </form>
+             */}
         </section>
     )
 }

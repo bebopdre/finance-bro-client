@@ -1,13 +1,23 @@
 .homepage {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-end;
+    background-image: url('../../assets/background/dead-grandma.svg');
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
 
 .terminal {
-    border-radius: 10px;
-    width: 90%;
-    height: 50vh;
+    padding: 1vw;
+    width: 100%;
+    height: fit-content;
     background-color: black;
+    position: absolute;
+    bottom: 0;
+
+    
 }
+
+
+//the color for the border is #95FFDB
