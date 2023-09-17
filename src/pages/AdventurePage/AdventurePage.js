@@ -4,7 +4,7 @@ const AdventurePage = () => {
   return (
     <div className="adventure">
       <div className="adventure__title-container">
-        <h1 className="adventure__title">Pick your Adventure</h1>
+        <h1 className="adventure__title">Start your Adventure</h1>
       </div>
       <article className="adventure__item-flex">
         <section className="adventure__contents">

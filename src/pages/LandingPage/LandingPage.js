@@ -6,7 +6,7 @@ const LandingPage = () => {
       <div className="landing___title-container">
         <h1 className="landing__title"> Shell City Trails</h1>
         <div className="landing__subtitle-container">
-          <h2 className="landing_subtitle">The financial literacy game.</h2>
+          <h2 className="landing__subtitle">The financial literacy game.</h2>
         </div>
       </div>
 

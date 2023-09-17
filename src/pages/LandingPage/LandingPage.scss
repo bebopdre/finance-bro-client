@@ -1,5 +1,5 @@
 @use "../../styles/partials/mixins" as *;
-@use "../../styles/global.scss";
+@use "../../styles/global.scss" as *;
 @use "../../styles/partials/typography";
 
 .landing {
@@ -7,10 +7,12 @@
   flex-direction: column;
   justify-content: center;
   margin: 20px;
+  background-color: black;
   &__title-container {
     gap: 2rem;
   }
   &__title {
+    color: $white;
     padding: 10px;
     @include page-header;
   }
@@ -18,17 +20,21 @@
     margin: 20px;
   }
   &__subtitle {
+    color: $teal;
     @include sub-header;
   }
   &__buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     border-radius: 25px;
   }
   &__button {
     border-radius: 25px;
     margin: 25px;
     padding: 10px;
+    border: none;
+    background-color: $purple;
   }
 }

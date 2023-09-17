@@ -2,9 +2,9 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography";
 
-body {
-  background-color: black;
-}
+// body {
+// //   background-color: black;
+// }
 .adventure {
   &__title {
     color: $white;
