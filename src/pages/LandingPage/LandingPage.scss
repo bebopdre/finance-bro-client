@@ -3,32 +3,58 @@
 @use "../../styles/partials/typography";
 
 .landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // margin: 20px;
+
+  height: 100vh;
+  padding: 3vw;
+  background-image: url('../../assets/background/landing-background.svg');
+  background-position: center;
+  background-size: cover;
+
+  &__background {
+    width: 85%;
+    height: 60vh;
+    background-color: black;
+    border-radius: 10px;
+    padding: 2vw;
+
+  }
   &__title-container {
-    gap: 2rem;
+    // gap: 2rem;
   }
   &__title {
-    padding: 10px;
-    @include page-header;
+    // padding: 10px;
+    // @include page-header;
+    color: white;
+    font-size: 11rem;
+    font-weight: 100;
   }
   &__subtitle-container {
-    margin: 20px;
+    // margin: 20px;
+    padding: 2vw 1vw;
   }
   &__subtitle {
-    @include sub-header;
+    // @include sub-header;
+    color: #95FFDB;
+    font-size: 3rem;
   }
   &__buttons {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 25px;
+    width: 100%;
+    margin: 2vw 0;
   }
   &__button {
     border-radius: 25px;
-    margin: 25px;
-    padding: 10px;
+    width: 20%;
+    height: 3.5vw;
+    border: none;
+    font-size: 2rem;
+
+    background-color: #C397FF;
   }
 }
