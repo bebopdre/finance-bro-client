@@ -10,28 +10,28 @@ const AdventurePage = () => {
         <section className="adventure__contents">
           <div className="adventure__item-container">
             <div className="adventure__item-one">
-              <h2 className="adventure__subheading">Credit</h2>
+              <h2 className="adventure__subheading">Wispy Willows</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Taxes</h2>
+              <h2 className="adventure__subheading">Cherry Creek</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Budgeting</h2>
+              <h2 className="adventure__subheading">Isla Morada</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Mortgages</h2>
+              <h2 className="adventure__subheading">Wynwood</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
@@ -40,21 +40,21 @@ const AdventurePage = () => {
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Real Estate</h2>
+              <h2 className="adventure__subheading">Steel District</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Bit Coin</h2>
+              <h2 className="adventure__subheading">Arcadia</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
           <div className="adventure__item-container">
             <div className="adventure__item-one">
               {" "}
-              <h2 className="adventure__subheading">Crypto</h2>
+              <h2 className="adventure__subheading">El Capitan</h2>
             </div>
             <div className="adventure__item credit-item"></div>
           </div>
