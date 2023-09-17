@@ -1,5 +1,7 @@
 import React from "react";
 import "../LandingPage/LandingPage.scss";
+import { Link } from "react-router-dom";
+
 const LandingPage = () => {
   return (
     <div className="landing">
@@ -12,7 +14,7 @@ const LandingPage = () => {
         </div>
 
         <div className="landing__buttons">
-            <button className="landing__button"> New Game</button>
+            <Link to="/adventure" className="landing__button"> New Game</Link>
             <button className="landing__button"> Save Game</button>
             <button className="landing__button"> Exit</button>
         </div>
