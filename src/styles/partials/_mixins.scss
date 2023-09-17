@@ -1,0 +1,29 @@
+@mixin mobile {
+  @media (min-width: 20rem) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 80rem) {
+    @content;
+  }
+}
+
+@mixin page-header {
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+@mixin sub-header {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
