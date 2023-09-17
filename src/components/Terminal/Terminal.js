@@ -8,14 +8,31 @@ function Terminal() {
     const [message, setMessage] = useState('Type Start to begin: ');
     const [path, setPath] = useState([]);
     const [showMessage, setShowMessage] = useState(false);
+    const [next, setNext] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
-        let displayText =[];
+        let displayText = [];
 
-        // if(e.target.userInput.value === 'Start' || e.target.userInput.value === 'start') {
-            
-        // }
+        function doTheDamnThing(thing) {
+            displayText = [];
+            let printDecisions = thing.tree;
+            displayText.push(thing.description);
+            printDecisions.forEach( (dec, index) => (
+                displayText.push(`${index+1}. ` + dec.option + `\n`)
+            ));
+            setPath(displayText);
+            setMessage('Pick Another Path: ');
+            setNext(true);
+        }
+
+        function cycleThrough(thing) {
+            displayText = [];
+            (thing.tree).forEach( dec => (
+                displayText.push(dec.option)
+            ));
+            setPath(displayText);
+        }
 
         switch (e.target.userInput.value) {
             case ('start' || 'Start'):
@@ -28,13 +45,16 @@ function Terminal() {
                 setMessage('Pick Your Path: ');
                 break;
             case '1':
-                displayText = [];
-                let printDecisions2 = decisions[0].decisions[0].tree;
-                printDecisions2.forEach( (dec, index) => (
-                    displayText.push(`${index+5}. ` + dec.option + `\n`)
-                ));
-                setPath(displayText);
-                setMessage('Pick Another Path: ');
+                (setNext) ? cycleThrough(decisions[0].decisions[0].tree[0]) : doTheDamnThing(decisions[0].decisions[0]);
+                break;
+            case '2':
+                doTheDamnThing(decisions[0].decisions[1]);
+                break;
+            case '3':
+                doTheDamnThing(decisions[0].decisions[2]);
+                break;
+            case '4':
+                doTheDamnThing(decisions[0].decisions[3]);
                 break;
             default:
                 break;
@@ -47,6 +67,21 @@ function Terminal() {
     return (
         <section className='terminal-window'>
             <h2 className='terminal-window__heading'>Hello! Welcome to Shell City Trails</h2>
+            <div className={showMessage ? 'off' : ''}>
+                <p className='terminal-window__message'>
+                    Oh no... Your Grandmother has passed!
+                </p>
+                <p className='terminal-window__message'>
+                    Fortunately for you, you were her favorite grandchild. 
+                </p>
+                <p className='terminal-window__message'>
+                    So much so that she left you with a loving sum of $15,000
+                </p>
+                <p className='terminal-window__message'>
+                    How are you going to spend it?
+                </p>
+            </div>
+            
             <p className='terminal-window__message'>{message}</p>
             <p className={showMessage ? 'terminal-window__options' : 'off'}>
                 <Options options={path} />
