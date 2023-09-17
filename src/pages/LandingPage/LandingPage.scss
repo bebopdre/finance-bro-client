@@ -3,11 +3,6 @@
 @use "../../styles/partials/typography";
 
 .landing {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // margin: 20px;
-
   height: 100vh;
   padding: 3vw;
   background-image: url('../../assets/background/landing-background.svg');
@@ -22,22 +17,15 @@
     padding: 2vw;
 
   }
-  &__title-container {
-    // gap: 2rem;
-  }
   &__title {
-    // padding: 10px;
-    // @include page-header;
     color: white;
     font-size: 11rem;
     font-weight: 100;
   }
   &__subtitle-container {
-    // margin: 20px;
     padding: 2vw 1vw;
   }
   &__subtitle {
-    // @include sub-header;
     color: #95FFDB;
     font-size: 3rem;
   }

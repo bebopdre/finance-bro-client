@@ -1,0 +1,54 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/global.scss" as *;
+@use "../../styles/partials/typography";
+
+.feedback {
+  background-color: black;
+  height: 100vh;
+  &__image {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: $teal;
+  }
+  &__text {
+    color: $white;
+    @include body-medium;
+    &-row{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+  }
+  &__subheading {
+    color: $white;
+    padding-bottom: 1rem;
+    @include page-header;
+  }
+  &__window {
+    background-color: $white;
+    border-radius: 25px;
+    height: 30vh;
+    width: 30vw;
+    &-large {
+      background-color: $white;
+      border-radius: 25px;
+      height: 50vh;
+      width: 50vw;
+    }
+    &-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        @include sub-header;
+        gap: 5rem;
+    }
+    &-text{
+        display: flex;
+        align-items: center;
+        @include body-medium;
+        margin-top: 1rem;
+    }
+  }
+  
+}
